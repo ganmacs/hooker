@@ -40,17 +40,12 @@ end
 a = A.new
 a.test('this') do |s|
   p s
-end 
+end
+
+# => "this is in before"
+# => "this is test line and received hoge"
+# => "this is in after"
 ```
-
-* result
-
-```ruby
-"this is in before"
-"this is test line and received hoge"
-"this is in after"
-```
-
 
 ## Development
 
