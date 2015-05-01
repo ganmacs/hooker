@@ -1,21 +1,5 @@
 # Hooker
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'hooker'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install hooker
-
 ## Usage
 
 ```ruby
@@ -55,7 +39,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/hooker/fork )
+1. Fork it ( https://github.com/ganmacs/hooker/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
