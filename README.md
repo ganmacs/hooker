@@ -1,4 +1,6 @@
 # Hooker
+[![Build Status](https://travis-ci.org/ganmacs/hooker.svg)](https://travis-ci.org/ganmacs/hooker)
+[![Code Climate](https://codeclimate.com/github/ganmacs/hooker/badges/gpa.svg)](https://codeclimate.com/github/ganmacs/hooker)
 
 ## Usage
 
