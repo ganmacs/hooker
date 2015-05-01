@@ -1,9 +1,5 @@
 # Hooker
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/hooker`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -22,7 +18,39 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+class A
+  include Hooker
+  after_hooker :test, :after
+  before_hooker :test, :before
+
+  def test(str)
+    yield("this is test line and received #{str}")
+  end
+
+  def before
+    p 'this is in before'
+  end
+
+  def after
+    p 'this is in after'
+  end
+end
+
+a = A.new
+a.test('this') do |s|
+  p s
+end 
+```
+
+* result
+
+```ruby
+"this is in before"
+"this is test line and received hoge"
+"this is in after"
+```
+
 
 ## Development
 
