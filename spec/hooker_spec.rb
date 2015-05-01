@@ -1,11 +1,22 @@
-require 'spec_helper'
-
 describe Hooker do
-  it 'has a version number' do
-    expect(Hooker::VERSION).not_to be nil
-  end
+  let(:klass) do
+    Class.new do
+      include Hooker
+      before_hooker :a, :b
+      after_hooker :a, :c
 
-  it 'does something useful' do
-    expect(false).to eq(true)
+      def a
+        puts 'in a'
+      end
+
+      def b
+        puts 'in b'
+      end
+
+      def c
+        puts 'in c'
+      end
+    end
   end
+  it { expect { klass.new.a }.to output("in b\nin a\nin c\n").to_stdout }
 end
