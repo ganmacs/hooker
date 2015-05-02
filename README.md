@@ -29,7 +29,7 @@ a.test('this') do |s|
 end
 
 # => "this is in before"
-# => "this is test line and received hoge"
+# => "this is test line and received this"
 # => "this is in after"
 ```
 
